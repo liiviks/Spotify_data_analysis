@@ -1,0 +1,78 @@
+---
+title: "Spotify_data"
+output: html_document
+date: "2023-10-25"
+runtime: shiny
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Dataset
+
+The dataset used:
+<https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023>
+
+## Key Features
+
+1.  track_name: Name of the song
+
+2.  artist(s)*name: Name of the artist(s) of the song artist_count:
+    Number of artists contributing to the song*
+
+3.  *released_year: Year when the song was released*
+
+4.  *released_month: Month when the song was released*
+
+5.   *released_day: Day of the month when the song was released*
+
+6.   *in_spotify_playlists: Number of Spotify playlists the song is
+    included in*
+
+7.  *in_spotify_charts: Presence and rank of the song on Spotify charts*
+
+8.  *streams: Total number of streams on Spotify*
+
+9.  *in_apple_playlists: Number of Apple Music playlists the song is
+    included in*
+
+10. *in_apple_charts: Presence and rank of the song on Apple Music
+    charts in_deezer_playlists: Number of Deezer playlists the song is
+    included in*
+
+11. *in_deezer_charts: Presence and rank of the song on Deezer charts*
+
+12. *in_shazam_charts: Presence and rank of the song on Shazam charts*
+
+13. *bpm: Beats per minute, a measure of song tempo*
+
+14. *key: Key of the song*
+
+15. *mode: Mode of the song (major or minor)*
+
+16. *danceability*%: Percentage indicating how suitable the song is for
+    dancing
+
+17. valence\_%: Positivity of the song's musical content
+
+18. energy\_%: Perceived energy level of the song
+
+19. acousticness\_%: Amount of acoustic sound in the song
+
+20. instrumentalness\_%: Amount of instrumental content in the song
+
+21. liveness\_%: Presence of live performance elements
+
+22. speechiness\_%: Amount of spoken words in the song
+
+## File:
+
+```{r}
+Spotify=read.csv2("C:/Users/liivi/Documents/Spotify/spotify-2023.csv",header = 1)
+```
+
+
